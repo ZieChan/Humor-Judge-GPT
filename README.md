@@ -22,32 +22,21 @@ packaging==23.0
 # 2 Creating dataset
 ## 2.1 Label file creation
 
-- 本次演示以花卉数据集为例，目录结构如下：
+- The directory structure of dataset is as follows:
 
 ```
-├─flower_photos
-│  ├─daisy
-│  │      100080576_f52e8ee070_n.jpg
-│  │      10140303196_b88d3d6cec.jpg
+├─dataset
+│  ├─humor
+│  │      .jpg
+│  │      .jpg
 │  │      ...
-│  ├─dandelion
-│  │      10043234166_e6dd915111_n.jpg
-│  │      10200780773_c6051a7d71_n.jpg
+│  ├─inhumor
+│  │      .jpg
+│  │      .jpg
 │  │      ...
-│  ├─roses
-│  │      10090824183_d02c613f10_m.jpg
-│  │      102501987_3cdb8e5394_n.jpg
-│  │      ...
-│  ├─sunflowers
-│  │      1008566138_6927679c8a.jpg
-│  │      1022552002_2b93faf9e7_n.jpg
-│  │      ...
-│  └─tulips
-│  │      100930342_92e8746431_n.jpg
-│  │      10094729603_eeca3f2cb6.jpg
-│  │      ...
+
 ```
-- 在`Awesome-Backbones/datas/`中创建标签文件`annotations.txt`，按行将`类别名 索引`写入文件；
+- Create the tag file `annotations.txt` in `Humor-Judge-GPT/datas/` and write the `category name index` to the file by line;
 ```
 daisy 0
 dandelion 1
@@ -62,11 +51,11 @@ tulips 4
 init_dataset = 'Your dataset path'
 new_dataset = 'A:/Humor-Judge-GPT/datasets'
 ```
-- 在`Awesome-Backbones/`下打开终端输入命令：
+- Open a terminal under `Humor-Judge-GPT/` and enter the command:
 ```
 python tools/split_data.py
 ```
-- 得到划分后的数据集格式如下：
+- The format of the partitioned dataset is obtained as follows:
 ```
 ├─...
 ├─datasets
