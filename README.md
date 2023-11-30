@@ -38,11 +38,8 @@ packaging==23.0
 ```
 - Create the tag file `annotations.txt` in `Humor-Judge-GPT/datas/` and write the `category name index` to the file by line;
 ```
-daisy 0
-dandelion 1
-roses 2
-sunflowers 3
-tulips 4
+inhumor 0
+humor 1
 ```
 ## 2.2 Data set segmentation
 - Open `Humor-Judge-GPT/tools/split_data.py`
