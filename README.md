@@ -19,8 +19,8 @@ h5py==3.6.0
 terminaltables==3.1.0
 packaging==23.0
 ```
-
-## 1. 标签文件制作
+# 2 Creating dataset
+## 2.1 Label file creation
 
 - 本次演示以花卉数据集为例，目录结构如下：
 
@@ -55,7 +55,7 @@ roses 2
 sunflowers 3
 tulips 4
 ```
-## 2. 数据集划分
+## 2.2 Data set segmentation
 - Open `Humor-Judge-GPT/tools/split_data.py`
 - Modify the `original dataset path` and the `divided save path.` It is strongly recommended that the divided save path `datasets` be left unchanged. The next step is based on the folder by default for operations
 ```
@@ -78,7 +78,7 @@ python tools/split_data.py
 │     ├─inhumor
 ├─...
 ```
-# 2 Making Dataset
+## 2.3 Making Dataset
 - Ensure that the partitioned dataset is under `Humor-Judge-GPT/datasets.` If not, then change the dataset path under `get_annotation.py`;
 ```
 datasets_path   = 'Your dataset path'
