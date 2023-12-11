@@ -89,6 +89,7 @@ python tools/train.py models/efficientnet/efficientnet_b7.py
 ```
 
 # 4 Image Detection
+Note that modifying the weight path of `data_cfg->test->ckpt` in the configuration file will use this weight for the prediction
 
 ## Single Image Detection
 - Open the terminal under `Humor-Judge-GPT/` and enter the command:
