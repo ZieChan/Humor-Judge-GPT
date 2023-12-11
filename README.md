@@ -101,4 +101,7 @@ python tools/single_test.py detection/humor/humor_1.jpg models/efficientnet/effi
 ```
 python tools/batch_test.py detection/humor models/efficientnet/efficientnet_b7.py --show
 ```
-
+# 5 GPT-4V After Few-Shot Learning
+```
+https://chat.openai.com/g/g-375ModmEn-humor-assessment-gpt
+```
